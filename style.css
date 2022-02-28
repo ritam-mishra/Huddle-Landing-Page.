@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(257, 40%, 49%);
+    margin: 0px;
+    background-image: url("./bg-desktop.svg");
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100vw;
+    padding: 30px 0px 0px 40px;
+}
+
+footer{    
+    position:fixed;
+    bottom:1rem;
+    right: 10%;
+    width:100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height:10%; 
+    gap: 20px;
+}
+
+main{
+    position:absolute;
+    top: 50%;
+    bottom: 50%;
+    /* width:100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px 50px 0px 40px;
+}
+.mockup{
+    width: 50%;
+    margin-right: 20px;
+}
+
+.mockup img{
+    height: 500px;
+    width: 100%;
+    padding: 30px 30px 0px 0px;
+    object-fit: contain;
+}
+
+.texts{
+    width: 50%;
+}
+
+.texts .first span{
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.texts .second p{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'open sans';
+    width: 95%;
+    margin: 2rem 0;
+    word-wrap: break-word;
+}
+
+.regBtn .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #fff;
+    font-size: 1.2em;
+    font-family: 'Poppins';
+    cursor: pointer;
+    box-shadow: 1px 1px 9px 0.5px rgb(0, 0, 0, 0.3);
+}
+
+.regBtn .button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    box-shadow: 1px 1px 1rem hsl(300, 28%, 71%);
+}
+
+.fa-brands{
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 100%;
+    margin: 0;
+    cursor: pointer;
+
+}
+.fa-brands:hover{
+    color: hsl(300, 69%, 71%);
+    border: 3px solid hsl(300, 69%, 71%);
+    filter: drop-shadow(0px 0px 4px hsl(300, 69%, 37%));
+}
+
+/* FOR MOBILE VIEW. MIN WIDTH IS GIVEN 426px */
+
+@media screen and (max-width:426px){
+
+    header{
+        position:fixed;
+        top:0;
+        width:100vw;
+        padding: 30px 0px 0px 20px;
+    }
+    
+    main{
+        position:absolute;
+        top: 50%;
+        bottom: 50%;
+        width:100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0px 50px 0px 40px;
+    }
+
+    .mockup{
+        width: 100%;
+        margin-right: 20px;
+    }
+    
+    .mockup img{
+        height: 222px;
+        width: 100%;
+        padding: 20px;
+        /* object-fit: contain; */
+    }
+    .texts{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .texts .first span{
+        color: white;
+        font-size: 25px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    
+    .texts .second p{
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: 'open sans';
+        width: 290px;
+        margin: 1.5em 0;
+        word-wrap: break-word;
+    }
+    
+    .regBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .regBtn .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: #fff;
+        font-size: 10px;
+        font-family: 'Poppins';
+        cursor: pointer;
+        box-shadow: 0px 0px 8px 0.4px rgb(0, 0, 0, 0.3);
+    }
+    
+    .regBtn .button:hover{
+        background-color: hsl(300, 69%, 71%);
+        color: #fff;
+        box-shadow: 1px 1px 1rem hsl(300, 28%, 71%);
+    }
+
+    footer{    
+        position:fixed;
+        bottom:1rem;
+        right: 10%;
+        width:100vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height:10%; 
+        gap: 20px;
+    }
+    
+    .fa-brands{
+        color: white;
+        font-size: 1rem;
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 100%;
+        margin: 0;
+        cursor: pointer;
+    
+    }
+    .fa-brands:hover{
+        color: hsl(300, 69%, 71%);
+        border: 3px solid hsl(300, 69%, 71%);
+        filter: drop-shadow(0px 0px 4px hsl(300, 69%, 37%));
+    }
+}
